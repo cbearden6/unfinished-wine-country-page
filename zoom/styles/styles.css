@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* boz sizing does not make your box bigger, it makes the space in your box smaller */
+}
+
+body {
+    background-image: url(../images/river2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+}
+
+html {
+    min-height: 100%;
+}
+
+#logo {
+    margin: 100px 0 30px 0;
+}
+
+header {
+    width: 200px;
+    background: rgba(50, 50, 50, .9);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav li {
+    height: 30px;
+    line-height: 30px;
+    background: #800;
+    position: relative;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+    display: block;
+}
+
+nav a:hover {
+    background: #600;
+}
+
+.drop-down {
+    display: none;
+}
+
+nav li:hover .drop-down {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 130px;
+    width: 140px;
+    z-index: 1;
+}
+
+#wrapper {
+    /* width: 980px; */
+    max-width: 1200px;
+    margin: 150px 0 80px 220px;
+    /* padding: 20px 0; */
+    overflow: hidden;
+}
+
+.row {
+    background: cornsilk;
+    overflow: hidden;
+    padding: 20px;
+    clear: both;
+}
+
+.third {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+    background: lemonchiffon;
+}
+
+
+.third:last-of-type {
+    margin-right: 0;
+}
+
+main {
+   width: 580px; 
+   float: left;
+   height: 400px;
+   background: #fff;
+}
+
+.half {
+    width: 460px;
+    height: 300px;
+    background: orange;
+    float: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+aside {
+    width: 340px;
+    height: 300px;
+    background: white;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    width: 100%;
+    background: rgba(50, 50, 50, .9);
+}
+
+footer li {
+    float: left;
+    margin-right: 30px;
+
+}
+
+footer ul {
+    padding-left: 30px;
+    list-style-type: none;
+    color: beige;
+}
+
+footer a {
+    color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        background: orange;
+    }
+    header {
+        width: 160px;
+    }
+    footer {
+        left: 160px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background: red;
+    }
+
+}
